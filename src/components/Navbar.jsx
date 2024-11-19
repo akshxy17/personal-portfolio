@@ -62,7 +62,7 @@ const Header = () => {
         >
           <div className="border-b border-gray-300 pb-6">
             <div className="flex w-full items-center justify-between ">
-              <Image src="/SK Logo.png" width={45} height={50} alt="Logo" />
+              <Image src="/blacklogo.jpg" width={45} height={50} alt="Logo" />
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:bg-red-500 hover:shadow-red-400 ease-in duration-300 text-black hover:text-white"
