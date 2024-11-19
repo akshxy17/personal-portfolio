@@ -130,20 +130,20 @@ const Header = () => {
             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
               <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
                 <Link
-                  href="https://www.linkedin.com/in/sanjay-kumar-p-1a2091224"
+                  href="https://www.linkedin.com/in/akshay-tonk-674368293?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBVCZKVdcQd6J9eIbFmhyOA%3D%3D"
                   target="_blank"
                 >
                   <FaLinkedinIn />
                 </Link>
               </div>
               <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
-                <Link href="https://github.com/sanjuchary" target="_blank">
+                <Link href="https://github.com/akshxy17" target="_blank">
                   <FaGithub />
                 </Link>
               </div>
               <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
                 <Link
-                  href="https://www.instagram.com/sanju_chary_15/"
+                  href="https://www.instagram.com/akshxyy17/"
                   target="_blank"
                 >
                   <AiOutlineInstagram />
