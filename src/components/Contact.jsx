@@ -1,17 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showDialog, setShowDialog] = useState(false);
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxqdgeo_q0WPWWP7G5Y6AgnJOX1aZrwZQU11uuIS5IBShKYwcmJPht9Br2pHZ2Pkc3t/exec';
     const form = event.target;
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-      .then((response) => console.log('Success!', response))
+      .then((response) => {
+        console.log('Success!', response);
+        setIsSubmitted(true);
+        setShowDialog(true);  // Show dialog box after successful form submission
+        setTimeout(() => {
+          setShowDialog(false);  // Hide dialog box after 3 seconds
+          setIsSubmitted(false); // Reset the success message
+        }, 3000);
+      })
       .catch((error) => console.error('Error!', error.message));
   };
 
@@ -158,7 +169,15 @@ const Contact = () => {
                   Reset
                 </button>
               </form>
-              
+
+              {/* Success Message (Dialog Box) */}
+              {showDialog && (
+                <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
+                  <div className="bg-white p-6 rounded-lg shadow-lg">
+                    <p className="text-center text-lg font-semibold">Form submitted successfully!</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -166,6 +185,5 @@ const Contact = () => {
     </div>
   );
 };
+
 export default Contact;
-
-
