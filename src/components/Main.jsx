@@ -25,8 +25,7 @@ const HeroSection = () => {
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4 ">
               <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
                 <Link
-                  href="https://www.linkedin.com/in/akshay-tonk-674368293?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2Okna7dvTEaGFpwK1VSuKg%3D%3Dhttps://www.linkedin.com/in/sanjay-kumar-p-1a2091224"
-                  target="_blank"
+                  href="https://www.linkedin.com/in/akshay-tonk" target="_blank"
                 >
                   <FaLinkedinIn />
                 </Link>
