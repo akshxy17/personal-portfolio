@@ -1,39 +1,21 @@
-import React from "react";
 import Image from "next/image";
-
-
+import Link from "next/link";
+import React from "react";
+import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = React.useState(false);
-  const [message, setMessage] = React.useState("");
-
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = (event) => {
     event.preventDefault();
-    setIsSubmitting(true); // Disable submit button
-    setMessage(""); // Clear any previous message
-
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxqdgeo_q0WPWWP7G5Y6AgnJOX1aZrwZQU11uuIS5IBShKYwcmJPht9Br2pHZ2Pkc3t/exec";
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxqdgeo_q0WPWWP7G5Y6AgnJOX1aZrwZQU11uuIS5IBShKYwcmJPht9Br2pHZ2Pkc3t/exec';
     const form = event.target;
 
-    try {
-      const response = await fetch(scriptURL, {
-        method: "POST",
-        body: new FormData(form),
-      });
-
-      if (response.ok) {
-        setMessage("Form submitted successfully!");
-        form.reset(); // Clear form fields
-      } else {
-        throw new Error("Failed to submit the form.");
-      }
-    } catch (error) {
-      setMessage(`Error: ${error.message}`);
-    } finally {
-      setIsSubmitting(false); // Re-enable submit button
-    }
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then((response) => console.log('Success!', response))
+      .catch((error) => console.error('Error!', error.message));
   };
+
+  const text = "let's";
 
   return (
     <div id="contact" className="w-full lg:h-screen pt-20">
@@ -58,8 +40,33 @@ const Contact = () => {
                 <p>Web Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
-                  me and let's talk.
+                  me and {text} talk.
                 </p>
+              </div>
+              <div>
+                <p className="uppercase pt-8">Connect With Me</p>
+                <div className="flex items-center justify-between m-w-[330px] m-auto py-4">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
+                    <Link href="https://www.linkedin.com/in/akshay-tonk" target="_blank">
+                      <FaLinkedinIn />
+                    </Link>
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
+                    <Link href="https://github.com/akshxy17" target="_blank">
+                      <FaGithub />
+                    </Link>
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
+                    <Link href="https://www.instagram.com/akshxyy17/" target="_blank">
+                      <AiOutlineInstagram />
+                    </Link>
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
+                    <Link href="https://twitter.com/home" target="_blank">
+                      <AiOutlineTwitter />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -82,7 +89,6 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
                     placeholder="Enter your Name"
-                    required
                   />
                 </div>
 
@@ -96,7 +102,6 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="number"
                     placeholder="Enter your Mobile number"
-                    required
                   />
                 </div>
 
@@ -110,7 +115,6 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
                     placeholder="Enter your E-Mail"
-                    required
                   />
                 </div>
 
@@ -137,24 +141,24 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="8"
                     placeholder="Enter your Message"
-                    required
                   ></textarea>
                 </div>
 
                 <button
                   className="w-full p-4 text-gray-100 mt-4 bg-blue-500 hover:bg-blue-600"
                   type="submit"
-                  disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Submitting..." : "Submit"}
+                  Submit
+                </button>
+
+                <button
+                  className="w-full p-4 text-gray-100 mt-4 bg-red-500 hover:bg-red-600"
+                  type="reset"
+                >
+                  Reset
                 </button>
               </form>
-
-              {message && (
-                <div className="mt-4 p-4 text-center border rounded-lg bg-gray-100 text-black">
-                  {message}
-                </div>
-              )}
+              
             </div>
           </div>
         </div>
@@ -163,3 +167,5 @@ const Contact = () => {
   );
 };
 export default Contact;
+
+
