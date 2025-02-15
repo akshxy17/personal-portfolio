@@ -87,16 +87,16 @@ const skills = () => {
               </div>
             </div>
           </div> */}
-          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image alt="/" src="/tailwind.png" width={50} height={50} />
+                <Image alt="/" src="/java.png" width={50} height={50} />
               </div>
               <div className="flex flex-col items-center justify-between">
-                <h3>Tailwind</h3>
+                <h3>Java</h3>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
