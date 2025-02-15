@@ -47,7 +47,7 @@ const skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src="/nextjs.png" width={50} height={50} />
@@ -56,8 +56,8 @@ const skills = () => {
                 <h3>NEXT</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </div> */}
+          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src="/node.png" width={50} height={50} />
@@ -66,8 +66,8 @@ const skills = () => {
                 <h3>Node</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </div> */}
+          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src="/mongo.png" width={50} height={50} />
@@ -76,8 +76,8 @@ const skills = () => {
                 <h3>MongoDb</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </div> */}
+          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src="/express.png" width={50} height={50} />
@@ -86,8 +86,8 @@ const skills = () => {
                 <h3>Express</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </div> */}
+          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src="/tailwind.png" width={50} height={50} />
@@ -96,7 +96,7 @@ const skills = () => {
                 <h3>Tailwind</h3>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -107,7 +107,7 @@ const skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src="/firebase.png" width={50} height={50} />
@@ -116,7 +116,7 @@ const skills = () => {
                 <h3>Firebase</h3>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -127,7 +127,7 @@ const skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src="/python.png" width={50} height={50} />
@@ -136,8 +136,8 @@ const skills = () => {
                 <h3>Python</h3>
               </div>
             </div>
-          </div>
-          <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+          </div> */}
+          {/* <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image alt="/" src="/reactnative.png" width={50} height={50} />
@@ -146,7 +146,7 @@ const skills = () => {
                 <h3>React Native</h3>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
