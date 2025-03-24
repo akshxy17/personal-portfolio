@@ -47,7 +47,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-4 uppercase">Akshay Tonk</h2>
+                <h2 className="py-4 uppercase">Akshay </h2>
                 <p>Web Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
