@@ -12,10 +12,10 @@ const HeroSection = () => {
             <h1 className="py-2 gap-2 ">
               Hi, {text} <span className="text-red-500 "> Akshay</span>
             </h1>
-            <h1 className="py-2 ">Web Developer</h1>
+            <h1 className="py-2 ">Full Stack Java Developer</h1>
             <p className="py-2 max-w-[70%] m-auto">
-              As a Web Developer, I specialize in building web
-              applications using MongoDB, Express.js, React.js, and Node.js.
+            Full Stack Java Developer, I specialize in building web
+              applications using MySQL, Spring Boot and React.js.
               With my expertise, I can create dynamic and responsive web
               applications that deliver a seamless user experience. I am
               passionate about staying up-to-date with the latest web
