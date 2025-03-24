@@ -14,8 +14,7 @@ const about = () => {
             <p className="uppercase text-2xl tracking-widest">about</p>
             <h2 className="py-2">Who I Am</h2>
             <p className="py-4 ">
-            I'm a B.Tech graduate from Malla Reddy Institute of Technology, specializing in building responsive front-end applications using React, HTML, CSS, and JavaScript. I focus on creating seamless integrations with APIs and backend technologies, always choosing the best tools for the job. Currently, I am working on projects with ReactJS and Firebase while continuously learning new technologies to enhance my skills.
-            </p>
+            As a B.Tech graduate from Malla Reddy Institute of Technology, I specialize in developing responsive front-end applications using React, HTML, CSS, and JavaScript, with a focus on creating seamless API integrations and user experiences. Currently, I am building innovative solutions with ReactJS and Firebase, leveraging my expertise to deliver efficient and dynamic web applications. Driven by a passion for continuous learning, I consistently explore and adapt to new technologies to enhance my development capabilities and stay current with industry trends            </p>
           </div>
           <div className="w-full h-auto m-auto bg-red-100 shadow-xl shadow-red-100 ease-in duration-300 rounded-full flex items-center justify-between p-4 hover:scale-105">
             <Image

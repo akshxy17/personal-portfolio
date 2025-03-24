@@ -14,13 +14,7 @@ const HeroSection = () => {
             </h1>
             <h1 className="py-2 ">Full Stack Java Developer</h1>
             <p className="py-2 max-w-[70%] m-auto">
-            Full Stack Java Developer, I specialize in building web
-              applications using MySQL, Spring Boot and React.js.
-              With my expertise, I can create dynamic and responsive web
-              applications that deliver a seamless user experience. I am
-              passionate about staying up-to-date with the latest web
-              technologies and best practices to ensure the highest quality of
-              code and efficiency in my projects.
+            As a Full Stack Java Developer, I craft robust web applications by leveraging MySQL, Spring Boot, and React.js to deliver exceptional digital solutions. My expertise lies in creating dynamic and responsive applications that combine powerful backend functionality with intuitive user interfaces, ensuring seamless user experiences across platforms. Driven by a commitment to excellence, I stay at the forefront of web technologies and industry best practices, consistently delivering high-quality, efficient, and scalable solutions
             </p>
             <div className="flex items-center justify-between max-w-[330px] m-auto py-4 ">
               <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:bg-red-500 hover:shadow-red-400 hover:scale-105 ease-in duration-300 text-xl text-black hover:text-white">
